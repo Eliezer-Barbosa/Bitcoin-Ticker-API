@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
+        <title>Bitcoin Ticker</title>
+    </head>
+
+    <body>
+        <!-- wrapping the form in a div class container from bootstrap-->
+        <div class="container">
+            <h1>Bitcoin Ticker</h1>
+            <!-- getting information from the user, to be sent to the server-->
+            <form action="/" method="POST">
+        
+                <input type="number" name="amount" placeholder="Quantity">
+        
+                <select name="crypto">
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="LTC">Litecoins</option>
+                </select>
+        
+                <select name="fiat">
+                    <option value="USD">US Dollars</option>
+                    <option value="GBP">GB Pounds</option>
+                    <option value="EUR">EU Euros</option>
+                </select>
+        
+                <button class="btn btn-primary" type="submit" name="button">Check</button>
+            </form>
+        </div>
+    </body>
+</html>
